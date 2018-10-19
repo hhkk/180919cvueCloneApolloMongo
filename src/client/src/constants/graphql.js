@@ -13,3 +13,4 @@ export const GREETING_SUBSCRIPTION = gql`
     greetingSeen
   }
 `
+new GraphQLServer

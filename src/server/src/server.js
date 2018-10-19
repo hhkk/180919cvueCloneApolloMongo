@@ -31,6 +31,11 @@ import models from './models'
 const typeDefs = mergeTypes(fileLoader(path.join(__dirname, './graphql/types')))
 const resolvers = mergeResolvers(fileLoader(path.join(__dirname, './graphql/resolvers')))
 
+const { GraphQLServer } = require('graphql-yoga')
+
+const server = new GraphQLServer({ typeDefs, resolvers })
+server.start(() => console.log('hbkhbk new GraphQLServer is running on localhost:4000'))
+
 // DATABASE CONNECTION
 mongoose.Promise = global.Promise
 mongoose
@@ -51,7 +56,6 @@ app.use(cors('*'))
 app.use(serveStatic(__dirname + "/dist"));
 app.use('*', serveStatic(__dirname + "/dist"))
 // app.use(favicon(path.join(__dirname, 'dist', 'static', 'favicon.png')))
-
 
 // GRAPHQL SETUP
 const schema = makeExecutableSchema({
@@ -84,7 +88,7 @@ const server =
 // CREATE SERVER WITH HTTP
 const ws = createServer(app);
 ws.listen(PORT, () => {
-  console.log(`Apollo Server is now running on http://localhost:${PORT}`)
+  console.log(`hbkhbk Apollo Server is now running on http://localhost:${PORT}`)
   // Set up the WebSocket for handling GraphQL subscriptions
   new SubscriptionServer({
     execute,

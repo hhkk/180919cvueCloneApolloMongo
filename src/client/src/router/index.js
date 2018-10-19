@@ -9,7 +9,7 @@ Vue.use(Router)
 const routes = [
   {
     path: '/',
-    name: 'welcome', // from https://www.howtographql.com/vue-apollo/5-authentication/
+    name: 'welcome', // from https://www.howtographql.com/vue-apollo/5-authentication/ (83 in the grid spreadsheet)
     component: welcomeComponent
   },
   // { //

@@ -4,7 +4,8 @@
   "description": "",
   "author": "Lucas Otero <lucasdanielotero1992@gmail.com>",
   "scripts": {
-    "start": "babel-watch src/server.js"
+    "start": "babel-watch src/server.js",
+    "hbkhbk": "npm start babel-watch"
   },
   "license": "MIT",
   "dependencies": {
@@ -16,6 +17,7 @@
     "graphql": "^0.13.2",
     "graphql-subscriptions": "^0.5.8",
     "graphql-tools": "^2.24.0",
+    "graphql-yoga": "^1.16.2",
     "merge-graphql-schemas": "^1.5.1",
     "mongoose": "^5.0.14",
     "morgan": "^1.9.0",
@@ -30,7 +32,10 @@
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-watch": "^2.0.7"
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "babel-watch": "^2.0.7",
+    "webpack": "^4.20.2",
+    "webpack-dev-server": "^3.1.9"
   }
 }
