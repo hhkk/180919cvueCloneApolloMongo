@@ -67,7 +67,7 @@ export default {
     },
     // GET MESSAGE FROM VUEX * YOU CAN DO THIS WITH COMPUTED PROPERTIES *
     insertVuexMessage () {
-      alert ('hihk');
+      //alert('hihk');
       this.vuexMessage = this.$store.state.storeMessage
     }
   },
